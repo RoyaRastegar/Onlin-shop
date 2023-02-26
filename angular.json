@@ -23,9 +23,13 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -90,6 +94,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -99,6 +104,6 @@
     }
   },
   "cli": {
-    "analytics": "539443c3-3be7-4a13-8f6d-9b7bf4a65d24"
+    "analytics": "afc4ef73-a907-4e2b-b356-4bdfb9030ebd"
   }
 }
