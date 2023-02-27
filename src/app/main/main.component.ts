@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IFruitModel } from '../fruit-model';
+import { FruitsService } from '../fruits.service';
 
 @Component({
   selector: 'app-main',
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-
-  constructor() { }
+  topSale: IFruitModel[] = [];
+  constructor(private fruit: FruitsService) { }
 
   ngOnInit(): void {
+    this.topSale=this.fruit.fruits;
   }
 
 }

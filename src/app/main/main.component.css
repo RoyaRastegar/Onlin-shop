@@ -94,8 +94,9 @@
     margin: auto;
     text-align: center;
     font-family: arial;
-    
+    margin-right: 1em;
     color: #4e772b;
+    margin-bottom: 2em;
   }
   
   .price {
@@ -119,7 +120,7 @@
     opacity: 0.7;
   }
   .card {
-    background-color: #fff;
+    background-color: #efd9a0;
     border: none;
     border-radius: 10px;
     width: 190px;

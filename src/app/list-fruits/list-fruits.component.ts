@@ -9,6 +9,7 @@ import { FruitsService } from '../fruits.service';
 export class ListFruitsComponent implements OnInit {
   fruits: IFruitModel[] = [];
   dropdownValue:String='Sort by ';
+  dropdownDisplay:string="Display";
   constructor(private fruit: FruitsService) {
   }
 
@@ -38,4 +39,5 @@ export class ListFruitsComponent implements OnInit {
       }
     });
   }
+  
 }

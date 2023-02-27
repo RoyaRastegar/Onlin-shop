@@ -1,18 +1,26 @@
 <div class="col-sm-12" style="background-color: #eceee0;">
   <div class="row pt-5">
     <div class="col-sm-3"></div>
-    <div class="col-sm-6 d-flex flex-wrap justify-content-start "style="border:
+    <div class="col-sm-6 d-flex flex-column "style="border:
       2px solid #4e772b;background-color:#efd9a0;">
-      <div class="row justify-content-start pt-2">
-        <div ngbDropdown>
-          <button class="btn sortbtn" id="gfg"
-            ngbDropdownToggle>{{dropdownValue}}</button>
-          <div ngbDropdownMenu="gfg" class="sortbtn">
-            <button ngbDropdownItem (click)="sortType(1)" >to upper price</button>
-            <button ngbDropdownItem  (click)="sortType(2)">to lower price</button>
-            <button ngbDropdownItem  (click)="sortType(3)">liked</button>
+      <div class="row justify-content-between pt-2">
+          <div class="col-sm-3" style=" margin-left: 4em;"  ngbDropdown>
+            <button class="btn sortbtn" id="gfg"
+              ngbDropdownToggle>{{dropdownValue}}</button>
+            <div ngbDropdownMenu="gfg" class="sortbtn">
+              <button ngbDropdownItem (click)="sortType(1)" >to upper price</button>
+              <button ngbDropdownItem  (click)="sortType(2)">to lower price</button>
+              <button ngbDropdownItem  (click)="sortType(3)">liked</button>
+            </div>
           </div>
-        </div>
+          <div class="col-sm-3" ngbDropdown>
+            <button class="btn sortbtn" id="gfg"
+              ngbDropdownToggle>{{dropdownDisplay}}</button>
+            <div ngbDropdownMenu="gfg" class="sortbtn">
+              <button ngbDropdownItem >5</button>
+              <button ngbDropdownItem  >10</button>
+            </div>
+          </div>
       </div>
       <div class="row justify-content-center">
         <div *ngFor="let f of fruits" class="card m-3">
